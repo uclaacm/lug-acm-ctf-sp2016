@@ -7,7 +7,7 @@ timeframe. All of the challenges were custom designed by students for students.
 
 ## Format
 
-The challenges are divided into two types: quizzes and flags.
+The challenges were divided into two types: quizzes and flags.
 
 __Quiz__ questions generally ask you to find certain pieces of information, for
 instance, the IP address of a site or the open ports of a server. These can
@@ -23,9 +23,9 @@ engineer an executable and extract its secrets.
 Entering the correct answer/flag yielded points for the team. Hints could be
 obtained for certain challenges at the cost of some points.
 
-## Problems
+## Challenges
 
-Here is the list of problems used (_this list is still incomplete_):
+Here is the list of challenges (_this list is still incomplete_):
 
 Quizzes:
 * [Ports](quizzes/ports/)
