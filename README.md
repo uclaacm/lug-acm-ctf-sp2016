@@ -29,3 +29,18 @@ Here is the list of challenges (_this list is still incomplete_):
 
 Quizzes:
 * [Ports](quizzes/ports/)
+
+Flags:
+* [HerpDerp protocol](flags/herpderp-protocol/)
+* [HerpDerp converter](flags/herpderp-converter/)
+* [Infiltration 1](flags/infiltration-1/)
+* [Infiltration 2](flags/infiltration-2/)
+* [Quote of the Day 1](flags/quote-of-the-day-1/)
+* [Quote of the Day 2](flags/quote-of-the-day-2/)
+* [Quote of the Day 3](flags/quote-of-the-day-3/)
+* [Mystery File](flags/mystery-file/)
+* [SSH Only](flags/ssh-only/)
+* [MyKeyboard.io](flags/mykeyboard-io/)
+* [Apache](flags/apache/)
+* [Forgetful Andy](flags/forgetful-andy/)
+* [Evil Andy](flags/evil-andy/)
