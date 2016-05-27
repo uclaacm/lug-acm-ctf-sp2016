@@ -34,5 +34,5 @@ probably the most intuitive method is to just fire up their browser's developer
 console and check the response headers. There will be a clear `Server:
 nginx/1.4.6 (Ubuntu)` line.
 
-Another easy method is to use _curl_ to retrieve the headers, e.g. `curl -I
+Another easy method is to use __curl__ to retrieve the headers, e.g. `curl -I
 acm.cs.ucla.edu`.
