@@ -28,7 +28,17 @@ obtained for certain challenges at the cost of some points.
 Here is the list of challenges (_this list is still incomplete_):
 
 Quizzes:
+* [HTTPS certificate](quizzes/https-certificate/)
 * [Ports](quizzes/ports/)
+* [Cookies](quizzes/cookies/)
+* [Webserver](quizzes/webserver/)
+* [CMS 1](quizzes/cms-1/)
+* [CMS 3](quizzes/cms-3/)
+* [SSH Key Generation 1](quizzes/ssh-key-generation-1/)
+* [SSH Key Generation 2](quizzes/ssh-key-generation-2/)
+* [HHVM](quizzes/hhvm/)
+* [User 0](quizzes/user-0/)
+* [Compiler Help](quizzes/compiler-help/)
 
 Flags:
 * [HerpDerp protocol](flags/herpderp-protocol/)
