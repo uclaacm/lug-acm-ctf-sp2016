@@ -25,7 +25,7 @@ obtained for certain challenges at the cost of some points.
 
 ## Challenges
 
-Here is the list of challenges:
+Here is the list of challenges (_detailed solutions are in progress!_)
 
 Quizzes:
 * [HTTPS certificate](quizzes/https-certificate/)

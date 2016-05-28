@@ -79,3 +79,5 @@ password8        (awesumadmin)
 
 Logging into `/admin` with awesumadmin:password8 will show a directory index
 containing the flag.
+
+In retrospect, we probably should've made this problem worth more points. ;)
