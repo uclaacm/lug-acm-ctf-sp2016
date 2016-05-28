@@ -40,4 +40,10 @@ __Points__
 
 ## Solution
 
+Reading the [manpage](http://linux.die.net/man/1/ssh-keygen) for `ssh-keygen` shows that it takes many handy arguments: 
+
+* `-t` to specify the type of key, here RSA 
+* `-b` to specify the size of the key in bits (beyond 8192 is unreasonable for now)
+* `-f` to specify the path to the output file (which will be created if it does not exist)
+
 
