@@ -125,11 +125,58 @@ is the memory address of the buffer. Check it by examining that address:
 0x7fffffffe2d0: 97 'a'  97 'a'  97 'a'  97 'a'  97 'a'  97 'a'  97 'a'  97 'a'
 ```
 
-This is thus the input buffer. From this point on, it's a lot of logic. The
-function `swap` is called a few times with the input buffer and two numbers as
-arguments. Then, a loop occurs which modifies the input buffer byte by byte.
-Finally, there is a comparison loop that compares between the input buffer and
-another array at `-0x30(%rbp)`.
+This is thus the input buffer. From this point on, it's a lot of logic and
+analyzing the flow of execution to figure out what the program might be doing.
+For this, gdb's `layout asm` offers an easier view of the disassembly. It's
+also very useful to annotate your copy of the disassembly as you go along, so
+you can sort of "decompile" the program back to something more high level.
+
+Here's an example. A little further, you will see that the function `swap` is
+called a few times with the input buffer and two numbers as arguments. Follow
+the call into `swap` by calling `si` instead of `ni`, and try to understand the
+function:
+
+```
+0000000000400b90 <swap>:
+  400b90:     push   %rbp
+  400b91:     mov    %rsp,%rbp
+  400b94:     mov    %rdi,-0x18(%rbp)   # arg1
+  400b98:     mov    %esi,-0x1c(%rbp)   # arg2
+  400b9b:     mov    %edx,-0x20(%rbp)   # arg3
+  400b9e:     mov    -0x1c(%rbp),%eax
+  400ba1:     movslq %eax,%rdx
+  400ba4:     mov    -0x18(%rbp),%rax
+  400ba8:     add    %rdx,%rax          # a = arg1 + arg2
+  400bab:     movzbl (%rax),%eax        # b = *a
+  400bae:     mov    %al,-0x1(%rbp)
+  400bb1:     mov    -0x1c(%rbp),%eax
+  400bb4:     movslq %eax,%rdx
+  400bb7:     mov    -0x18(%rbp),%rax
+  400bbb:     add    %rax,%rdx          # a = arg1 + arg2
+  400bbe:     mov    -0x20(%rbp),%eax
+  400bc1:     movslq %eax,%rcx
+  400bc4:     mov    -0x18(%rbp),%rax
+  400bc8:     add    %rcx,%rax          # c = arg1 + arg3
+  400bcb:     movzbl (%rax),%eax
+  400bce:     mov    %al,(%rdx)         # *a = *c
+  400bd0:     mov    -0x20(%rbp),%eax
+  400bd3:     movslq %eax,%rdx
+  400bd6:     mov    -0x18(%rbp),%rax
+  400bda:     add    %rax,%rdx          # c = arg1 + arg3
+  400bdd:     movzbl -0x1(%rbp),%eax
+  400be1:     mov    %al,(%rdx)         # *c = b
+  400be3:     pop    %rbp
+  400be4:     retq
+```
+
+Following the annotations, it's more clear now that the function swaps two
+elements in the buffer given in arg1. You can then infer the result of the four
+swap calls without looking through the function again.
+
+Do the same kind of analysis for the rest of the program. You will notice that
+a loop occurs which modifies the input buffer byte by byte. Finally, there is a
+comparison loop that compares between the input buffer and another array at
+`-0x30(%rbp)`.
 
 It's a lot of work (perhaps a bit too much for a 3-hour CTF -- in retrospect,
 this is easily 100 pts), but with some persistence, you should be able to work
