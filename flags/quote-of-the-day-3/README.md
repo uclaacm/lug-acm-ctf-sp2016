@@ -39,7 +39,7 @@ is the source code with the correct quote.
 
 This program is the same as the one in [Quote of the Day
 2](../quote-of-the-day-2/), up until right after the `read`. A quick scan of
-the disassembly shows that it calls functions like `time(0)`, and `srand`, and
+the disassembly shows that it calls functions like `time`, and `srand`, and
 `rand`. Scary!
 
 If you stare at the execution while letting it step through the execution
@@ -108,7 +108,7 @@ int main() {
 }
 ```
 
-Make sure your time is correct first! Sync it with an NFS server. Then, run the
+Make sure your time is correct first! Sync it with an NTP server. Then, run the
 password generator and pipe the password to the service right away:
 
 ```
