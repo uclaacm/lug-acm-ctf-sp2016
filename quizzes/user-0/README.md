@@ -24,4 +24,8 @@ __Points__
 
 ## Solution
 
+UID 0 for the account on the system with unlimited power
+is a [requirement of the kernel code](https://superuser.com/questions/626843/does-the-root-account-always-have-uid-gid-0/626845#626845). However, 
+"root" being the name of the account is simply a strong convention.
+
 

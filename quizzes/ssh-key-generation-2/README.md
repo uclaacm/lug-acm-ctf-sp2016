@@ -44,4 +44,9 @@ __Points__
 
 ## Solution
 
+The `-o` option [invokes the use](http://www.tedunangst.com/flak/post/new-openssh-key-format-and-bcrypt-pbkdf) of the new key storage format. 
+The `-p` option changes the password by prompting for the old one and then new
+one. This is preferable to having it be passed in with `-P old_passphrase -N new_passphrase`, which would show up in bash history, iTerm history, etc.
+Finally, `-f` specifies the output file (with a full path to avoid ambiguity).
+
 

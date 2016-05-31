@@ -27,4 +27,10 @@ __Points__
 
 ## Solution
 
+This is easily found using the `dig` utility: 
+
+    ...
+    ;; ANSWER SECTION:
+    dailybruin.com.     3599    IN  A   128.97.251.212
+    ...
 
