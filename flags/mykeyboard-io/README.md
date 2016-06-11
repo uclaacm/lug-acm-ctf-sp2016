@@ -35,13 +35,12 @@ __Points__
 
 The source code for the website is in the `mykeyboard` folder. Credits to
 [Start Bootstrap](https://github.com/BlackrockDigital/startbootstrap-agency)
-for the deisgn template.
+for the design template.
 
-This was one of the two 80 point problems (albeit I was angrily told it should
-be worth less ;). The fundamental technique here is the classic __SQL
-injection__.
+This was one of the two 80-point problems (albeit I was angrily told it should
+be worth less ;). The fundamental technique here is the classic **SQL injection**.
 
-Looking at the website, there are many fancy Javascript functions and CSS
+Looking at the website, there are many fancy JavaScript functions and CSS
 rules, but all of that is just camouflage. The only important part of the
 website (besides the memes) is the invite form.
 

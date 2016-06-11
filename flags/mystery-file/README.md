@@ -28,4 +28,8 @@ __Points__
 
 ## Solution
 
+`/etc/shadow` has a very particular format. Here, Googling parts
+of the text would brought up similar results all mentioning that particular
+file.
+
 

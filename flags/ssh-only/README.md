@@ -26,6 +26,10 @@ __Points__
 30
 ```
 
+
 ## Solution
 
+[phrasen|drescher](http://leidecker.info/projects/phrasendrescher.shtml) is
+the tool you're looking for. The passphrase protecting the key is a variant
+of a Top 1000 password. 
 

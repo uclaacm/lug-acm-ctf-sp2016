@@ -62,8 +62,7 @@ awesumadmin:$apr1$ZHC/1uYD$b55WoXAkyJFsQFWiWj643/
 ```
 
 This is an Apache .htpasswd file that it uses for HTTP basic authentication
-credentials. The password is hashed, but in these situations, __John the
-ripper__ is the right tool for the job. JtR is able to crack hashes by
+credentials. The password is hashed, but in these situations, __John the Ripper__ is the right tool for the job. JtR is able to crack hashes by
 intelligently trying words or phrases that people often use in passwords. This
 specific type of hash (Apache MD5) is supported by the commonly used version of
 JtR 1.7.9-jumbo-7 and upwards (Mac OSX users can try installing via homebrew).
