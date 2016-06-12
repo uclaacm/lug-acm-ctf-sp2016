@@ -29,4 +29,16 @@ __Points__
 
 ## Solution
 
+There is a common utility for brute-forcing passwords - which is the only
+option for a SHA-512 salted shadow file - called John the Ripper. It takes a
+list of password attempts, and tries all of them.
 
+The intention of this puzzle was to find the utility, and potentially hte clue
+about his myspace account, to guess that Andy uses one of the common myspace
+passwords. There is a list of many password files at
+[skullsecurity](https://wiki.skullsecurity.org/Passwords), and this includes a
+Myspace password dictionary. Then simply use John the Ripper
+```
+john --wordlist=myspace.txt ./shadow
+```
+To find the password - it is a relatively small list, so it should finish soon.
