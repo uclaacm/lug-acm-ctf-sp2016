@@ -5,6 +5,7 @@ The UCLA LUG + ACM Capture the Flag event was held in Spring 2016 using the
 competed to solve as many security-related challenges as possible in a 3 hour
 timeframe. All of the challenges were custom designed by students for students.
 
+
 ## Format
 
 The challenges were divided into two types: quizzes and flags.
@@ -22,6 +23,7 @@ engineer an executable and extract its secrets.
 
 Entering the correct answer/flag yielded points for the team. Hints could be
 obtained for certain challenges at the cost of some points.
+
 
 ## Challenges
 
@@ -52,5 +54,5 @@ Flags:
 * [SSH Only](flags/ssh-only/)
 * [MyKeyboard.io](flags/mykeyboard-io/)
 * [Apache](flags/apache/)
-* (no sol yet) [Forgetful Andy](flags/forgetful-andy/)
-* (no sol yet) [Evil Andy](flags/evil-andy/)
+* [Forgetful Andy](flags/forgetful-andy/)
+* [Evil Andy](flags/evil-andy/)

@@ -29,6 +29,9 @@ __Points__
 25
 ```
 
+
+## Solution
+
 Good practice when doing any sort of forensics is to check automatic system
 logs. In this case, there is a file in the home directory called
 `.bash_history` - it stores recent commands run by the user. In this case, it
@@ -43,7 +46,5 @@ it is simply invisible to an unknowing observer.
 There are a few common tools to do this in Linux. The one used in this case was
 steghide, and the password (when prompted with `steghide -sf Tux.jpg`) was the
 same as Andy's user password - 1atlanta. This would yield the secret file.
-
-## Solution
 
 
